@@ -1,4 +1,4 @@
-# Note Taker
+# [Note Taker](https://boiling-lowlands-93396.herokuapp.com/)
 
 ## Description
 
@@ -51,7 +51,7 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 ## Deploy
 
-This Note Taker application is deployed on Heroku.
+This Note Taker application is deployed on [Heroku](https://boiling-lowlands-93396.herokuapp.com/).
 
 ## Challeges
 
