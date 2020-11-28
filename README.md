@@ -1,80 +1,70 @@
-# Unit 11 Express Homework: Note Taker
+# Note Taker
 
 ## Description
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+This application is focus on to build the backend `JS` files as well as to connect the frontend `HTML` files by using `Express` web framwork which is a `dependency` of `NPM` package to run the code in the `locahost` and save, retrieve, and delete data from a `JSON` file.
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+## Table of Contents
 
-* The following HTML routes should be created:
+- [Build-In](#Build-In)
+- [Usage](#Usage)
+- [Business-Context](#Business-Context)
+- [Deploy](#Deploy)
+- [Challeges](#Challeges)
+- [Demo](#Demo)
+- [License](#license)
+- [Questions](#questions)
 
-  * GET `/notes` - Should return the `notes.html` file.
+## Build-In
 
-  * GET `*` - Should return the `index.html` file
+Build the two backend `JS` files: `htmlRoutes.js` and `apiRoutes.js` to connect the two frontend `HTML` files: `main.html` and `notes.html`.
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+- The following `HTML` routes were created for the application to be able to get the requests from client's side:
 
-* The following API routes should be created:
+  - GET `/` - will return the `main.html` file which will run on `url: localhost:3000` to a home page of Note Tracker application.
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+  - GET `/notes` - will return the `notes.html` file which will run on `url: localhost:3000/notes` to the note application.
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+- The following `API` routes were created for the application to be able to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+  - GET `/api/notes` - will read the `db.json` file and return all saved notes as JSON.
 
-## User Story
+  - POST `/api/notes` - will receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 
-AS A user, I want to be able to write and save notes
+  - DELETE `/api/notes/:id` - will receive a query parameter containing the unique id of a note to delete. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-I WANT to be able to delete notes I've written before
+The `db.json` file on the backend that is used to store and retrieve notes using the `fs` module.
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## Usage
 
-## Business Context
+User is able to write and save notes in this appllication.
+
+User is able to delete notes he/she has written before.
+
+User can organize his/her thoughts and keep track of tasks he/she needs to complete.
+
+The application allow user to create and save notes, view previously saved notes, and delete previously saved notes.
+
+## Business-Context
 
 For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
 
-## Acceptance Criteria
+## Deploy
 
-Application should allow users to create and save notes.
+This Note Taker application is deployed on Heroku.
 
-Application should allow users to view previously saved notes.
+## Challeges
 
-Application should allow users to delete previously saved notes.
+To `GET`,`POST`, and `DELETE` data from `JSON`.
 
-## Deploying the App
+## Demo
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+![note-taker](./demo/note-taker.gif)
 
-- - -
+## License
 
-## Commit Early and Often
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+## Questions?
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+If you have any questions about this application, please feel free to reach me via the link of my [GitHub](https://github.com/aprilyanggarwood) repository and my Email: <aprilyanggarwood@gmail.com>
