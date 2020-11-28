@@ -1,4 +1,4 @@
-# [Note Taker](https://boiling-lowlands-93396.herokuapp.com/)
+# Note Taker
 
 ## Description
 
@@ -9,7 +9,7 @@ This application is focus on to build the backend `JS` files as well as to conne
 - [Build-In](#Build-In)
 - [Usage](#Usage)
 - [Business-Context](#Business-Context)
-- [Deploy](#Deploy)
+- [Deploy](#Deploy) - [Heroku](https://boiling-lowlands-93396.herokuapp.com/)
 - [Challeges](#Challeges)
 - [Demo](#Demo)
 - [License](#license)
